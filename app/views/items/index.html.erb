@@ -1,0 +1,45 @@
+<%= render "shared/header" %>
+<div class='main'>
+
+  <%# 画面上部の「人生を変えるフリマアプリ」帯部分 %>
+  <div class='title-contents'>
+    <h2 class='service-title'>
+      手土産で悩むのはもったいない
+    </h2>
+    <p class='service-explain'>
+      temiyageで簡単に贈答品が決まる
+    </p>
+    <p class='service-explain'>
+      情報収集アプリです
+    </p>
+    <div class='store-btn'>
+      <%= link_to image_tag("app-store.svg", class:"apple-btn"), "#" %>
+      <%= link_to image_tag("google-play.png", class:"google-btn"), "#" %>
+    </div>
+  </div>
+  <%# /画面上部の「人生を変えるフリマアプリ」帯部分  %>
+
+  <%# 画面中央の「会員数日本一位」帯部分 %>
+  <div class='ad-contents'>
+    <h2 class='ad-title'>
+      会員数日本一位
+    </h2>
+    <p class='ad-explain'>
+      投稿数も業界最多です！
+    </p>
+    <p class='ad-explain'>
+      新しい発見があるかもしれません。
+    </p>
+    <div class='store-btn'>
+      <%= link_to image_tag("app-store.svg", class:"apple-btn"), "#" %>
+      <%= link_to image_tag("google-play.png", class:"google-btn"), "#" %>
+    </div>
+  </div>
+  <%# /画面中央の「会員数日本一位」帯部分 %>
+
+</div>
+<%= link_to( new_item_path , class: 'post-btn') do %>
+  <span class='post-btn-text'>投稿する</span>
+  <%= image_tag 'icon_bag.png' , size: '195x50' ,class: "post-btn-icon" %>
+<% end %>
+<%= render "shared/footer" %>
