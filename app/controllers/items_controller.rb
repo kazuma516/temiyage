@@ -1,25 +1,24 @@
 class ItemsController < ApplicationController
-  before_action :authenticate_user!, except: [:index, :show]
+  before_action :authenticate_user!, except: [:index]
   #ログインしていないユーザーがトップ画面ではなく、ログイン画面に遷移す設定のコード
   
-  before_action :set_item, only: [:show, :edit, :update, :destroy]
+  #before_action :set_item, only: [:show, :edit, :update, :destroy]
 
-  def index
-    @item = Item.includes(:user)#.favorite('created_at DESC')
-  end
+  #def index
+    #@item = Item.includes(:user)#.favorite('created_at DESC')
+  #end
 
   def new
     @item = Item.new
   end
 
   def create
-    Item.create(item_params)
-    #@item = Item.new(item_params)
-    #if @item.save
-     #redirect_to root_path
-    #else
-      #render :new
-    #end
+    @item = Item.new(item_params)
+    if @item.save
+     redirect_to root_path
+    else
+      render :new
+    end
   end
 
   def show  
@@ -55,7 +54,7 @@ class ItemsController < ApplicationController
     params.require(:item).permit(:image, :title, :introduction, :category_id, :buy_prefecture_id, :price_id, :season_id).merge(user_id: current_user.id)
   end
 
-  def set_item
-    @item = Item.find(params[:id])
-  end
+  #def set_item
+    #@item = Item.find(params[:id])
+  #end
 end
