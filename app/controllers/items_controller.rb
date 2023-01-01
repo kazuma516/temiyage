@@ -5,7 +5,7 @@ class ItemsController < ApplicationController
   before_action :set_item, only: [:show, :edit, :update, :destroy]
 
   def index
-    @item = Item.all #includes(:user).favorite('created_at DESC')
+    @item = Item.includes(:user)#.favorite('created_at DESC')
   end
 
   def new
@@ -21,8 +21,8 @@ class ItemsController < ApplicationController
     end
   end
 
-  #def show  
-  #end
+  def show  
+  end
 
   #def edit
     #if @item.user_id == current_user.id 
@@ -51,7 +51,7 @@ class ItemsController < ApplicationController
  private
 
   def item_params
-    params.require(:item).permit(:image, :title, :introduction, :price_id, :category_id, :buy_prefecture_id, :season_id, ).merge(user_id: current_user.id)
+    params.require(:item).permit(:title,:introduction,:buy_prefecture_id,:price_id,:image,:category_id,:season_id).merge(user_id: current_user.id)
   end
 
   def set_item
