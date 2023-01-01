@@ -1,12 +1,12 @@
 class ItemsController < ApplicationController
-  before_action :authenticate_user!, except: [:index, :show]
+  before_action :authenticate_user!, except: [:index]
   #ログインしていないユーザーがトップ画面ではなく、ログイン画面に遷移す設定のコード
   
-  before_action :set_item, only: [:show, :edit, :update, :destroy]
+  #before_action :set_item, only: [:show, :edit, :update, :destroy]
 
-  def index
-    @item = Item.all #includes(:user).favorite('created_at DESC')
-  end
+  #def index
+    #@item = Item.includes(:user)#.favorite('created_at DESC')
+  #end
 
   def new
     @item = Item.new
@@ -15,7 +15,7 @@ class ItemsController < ApplicationController
   def create
     @item = Item.new(item_params)
     if @item.save
-      redirect_to root_path
+     redirect_to root_path
     else
       render :new
     end
@@ -24,37 +24,37 @@ class ItemsController < ApplicationController
   def show  
   end
 
-  def edit
-    if @item.user_id == current_user.id 
-      redirect_to root_path
-    end
-  end
+  #def edit
+    #if @item.user_id == current_user.id 
+      #redirect_to root_path
+    #end
+  #end
 
-  def update
-    if @item.update(item_params)
-      redirect_to item_path(@item)
-    else
-      render :edit
-    end
-  end
+  #def update
+    #if @item.update(item_params)
+      #redirect_to item_path(@item)
+    #else
+     # render :edit
+    #end
+  #end
 
-  def destroy
+  #def destroy
     
-    if @item.user_id == current_user.id
-      @item.destroy
-      redirect_to root_path
-    else
-      redirect_to root_path
-    end
-  end
+    #if @item.user_id == current_user.id
+     # @item.destroy
+      #redirect_to root_path
+    #else
+      #redirect_to root_path
+    #end
+  #end
 
  private
 
   def item_params
-    params.require(:item).permit(:image, :name, :introduction, :price, :category_id, :item_condition_id, :prefecture_id, :preparation_day_id, :postage_type_id).merge(user_id: current_user.id)
+    params.require(:item).permit(:image, :title, :introduction, :category_id, :buy_prefecture_id, :price_id, :season_id).merge(user_id: current_user.id)
   end
 
-  def set_item
-    @item = Item.find(params[:id])
-  end
+  #def set_item
+    #@item = Item.find(params[:id])
+  #end
 end
