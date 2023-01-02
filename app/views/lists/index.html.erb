@@ -20,9 +20,10 @@
             <%= item.title %>
           </h3>
           <div class='item-price'>
-             <span><%#= item.price_id %><br><%#= item.buy_prefecture_id %></span>
+             <span><%#= item.where_to_buy.name %></span>
             <div class='star-btn'>
               <%= image_tag "star.png", class:"star-icon" %>
+              <br>
               <span class='star-count'>0</span>
             </div>
           </div>
