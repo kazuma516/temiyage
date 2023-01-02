@@ -4,6 +4,6 @@ Rails.application.routes.draw do
   root to: 'items#index'
   get '/users/sign_out' => 'items#index'
   resources :items do
-    resources :fovorites, only: [:index, :create, :destroy]
+    resources :lists, only: [:index, :create, :destroy]
   end
 end

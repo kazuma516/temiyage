@@ -32,7 +32,9 @@
       <%= link_to image_tag("tyugoku.png", class:"tyugoku-btn"), "#" %>
       <%= link_to image_tag("shikoku.png", class:"shikoku-btn"), "#" %>
       <%= link_to image_tag("kyushu.png", class:"kyushu-btn"), "#" %>
-      <%= link_to image_tag("zenkoku.png", class:"zenkoku-btn"), "#" %>
+      <%= link_to( item_lists_path(@item) , class: 'zenkoku-btn') do %>
+        <%= image_tag 'zenkoku.png' , class:"zenkoku-btn" %>
+      <% end %>
     </div>
   </div>
   <%# /画面中部の「全国表示」部分%>
