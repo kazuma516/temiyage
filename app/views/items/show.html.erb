@@ -1,0 +1,69 @@
+<%= render "shared/header" %>
+<%# 商品の概要 %>
+<div class="item-show">
+  <div class="item-box">
+    <h2 class="name">
+      <%= @item.title %>
+    </h2>
+    <div class="item-img-content">
+      <%= image_tag @item.image.variant(resize: '500x500'),class:"item-box-img" %>
+    </div>
+    <div class="item-explain-box">
+      <span><%= @item.introduction %></span>
+    </div>
+
+  <% if user_signed_in? %>
+    <% if current_user.id == @item.user_id %>
+    <%= link_to "商品の編集", edit_item_path, method: :get, class: "item-red-btn" %>
+    <p class="or-text">or</p>
+    <%= link_to "削除", item_path, method: :delete, class: "item-destroy" %>
+    <% end %>
+  <% end %>
+
+    <table class="detail-table">
+      <tbody>
+        <tr>
+          <th class="detail-item">出品者</th>
+          <td class="detail-value"><%= @item.user.nickname %></td>
+        </tr>
+        <tr>
+          <th class="detail-item">カテゴリー</th>
+          <td class="detail-value"><%= @item.category.name %></td>
+        </tr>
+        <tr>
+          <th class="detail-item">購入できる都道府県</th>
+          <td class="detail-value"><%= @item.where_to_buy.name %></td>
+        </tr>
+        <tr>
+          <th class="detail-item">10名あたりの予算</th>
+          <td class="detail-value"><%= @item.budgets.name %></td>
+        </tr>
+        <tr>
+          <th class="detail-item">季節（時季）</th>
+          <td class="detail-value"><%= @item.four_season.name %></td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="option">
+      <div class="favorite-btn">
+        <%= image_tag "star.png" ,class:"favorite-star-icon" ,width:"20",height:"20"%>
+        <span>お気に入り 0</span>
+      </div>
+    </div>
+  </div>
+  <%# /商品の概要 %>
+
+ 
+  <div class="links">
+    <a href="#" class="change-item-btn">
+      ＜ 前の商品
+    </a>
+    <a href="#" class="change-item-btn">
+      後ろの商品 ＞
+    </a>
+  </div>
+
+  <a href="#" class="another-item"><%= @item.category.name %>をもっと見る</a>
+</div>
+
+<%= render "shared/footer" %>

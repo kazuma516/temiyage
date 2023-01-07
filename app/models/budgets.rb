@@ -9,6 +9,6 @@ class Budgets < ActiveHash::Base
     { id: 6, name: '5000円~' }
   ]
 
-  include ActiveHash::Associations
-  has_many :items
+    include ActiveHash::Associations
+    has_many :items
 end

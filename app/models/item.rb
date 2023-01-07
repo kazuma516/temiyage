@@ -17,17 +17,17 @@ class Item < ApplicationRecord
     validates :title
     validates :introduction
     validates :category_id
-    validates :buy_prefecture_id
-    validates :price_id
-    validates :season_id
+    validates :where_to_buy_id
+    validates :budgets_id
+    validates :four_season_id
   end
 
     #validates :price, numericality: { only_integer: true }
 
   with_options numericality: { other_than: 0 } do
-    validates :buy_prefecture_id
+    validates :where_to_buy_id
     validates :category_id
-    validates :price_id
-    validates :season_id
+    validates :budgets_id
+    validates :four_season_id
   end
 end
