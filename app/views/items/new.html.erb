@@ -53,17 +53,17 @@
           購入できる都道府県
           <span class="indispensable">必須</span>
         </div>
-        <%= f.collection_select(:buy_prefecture_id, WhereToBuy.all, :id, :name, {}, {class:"select-box", id:"item-prefecture"}) %>
+        <%= f.collection_select(:where_to_buy_id, WhereToBuy.all, :id, :name, {}, {class:"select-box", id:"item-prefecture"}) %>
          <div class="weight-bold-text">
           10名あたりの予算
           <span class="indispensable">必須</span>
         </div>
-        <%= f.collection_select(:price_id, Budgets.all, :id, :name, {}, {class:"select-box", id:"item-price"}) %>
+        <%= f.collection_select(:budgets_id, Budgets.all, :id, :name, {}, {class:"select-box", id:"item-price"}) %>
         <div class="weight-bold-text">
           季節（時季）
           <span class="indispensable">必須</span>
         </div>
-        <%= f.collection_select(:season_id, FourSeason.all, :id, :name, {}, {class:"select-box", id:"item-season"}) %>
+        <%= f.collection_select(:four_season_id, FourSeason.all, :id, :name, {}, {class:"select-box", id:"item-season"}) %>
       </div>
     </div>
     <%# /商品の詳細 %>
