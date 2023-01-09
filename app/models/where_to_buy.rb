@@ -19,6 +19,6 @@ class WhereToBuy < ActiveHash::Base
     { id: 48, name: '全国' }
   ]
 
-  #include ActiveHash::Associations
-  #has_many :items
+  include ActiveHash::Associations
+  has_many :items
 end
