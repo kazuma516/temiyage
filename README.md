@@ -1,27 +1,21 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#アプリ名
+###temiyage
 
-Things you may want to cover:
+#アプリケーションの概要
+###ユーザー登録すると手土産を投稿することができます。自身が投稿した商品は、編集と削除をすることができます。他のユーザーが投稿した商品は、いいね！をすることができます。（いいね！未実装）
 
-* Ruby version
+#アプリの種類
+###情報収集アプリ
 
-* System dependencies
+#URL
+###Lenderによるデプロイ
 
-* Configuration
+###Basic認証
+###・ID:admin
+###・Pass：2222
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
 
 #　テーブル設計
 
