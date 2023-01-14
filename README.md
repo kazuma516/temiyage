@@ -54,7 +54,30 @@
 
 # 実装機能
 
+# トップページ
+## [![Image from Gyazo](https://i.gyazo.com/f6f42dd94111143c4b2ab7417050b1dc.gif)](https://gyazo.com/f6f42dd94111143c4b2ab7417050b1dc)
+# ユーザー登録機能
+## [![Image from Gyazo](https://i.gyazo.com/59fe8b43200a0177cab2ce4f940d0a2f.gif)](https://gyazo.com/59fe8b43200a0177cab2ce4f940d0a2f)
 
+# 商品投稿機能
+
+## [![Image from Gyazo](https://i.gyazo.com/c3d460cdd4c10ac2d437e8d896e82102.gif)](https://gyazo.com/c3d460cdd4c10ac2d437e8d896e82102)
+
+# 商品の編集機能
+
+## [![Image from Gyazo](https://i.gyazo.com/7213bc1eb54c8f7c5e689474d6843948.gif)](https://gyazo.com/7213bc1eb54c8f7c5e689474d6843948)
+
+# 商品の削除機能
+
+## [![Image from Gyazo](https://i.gyazo.com/1254cc9162b00244177aac9fffee748b.gif)](https://gyazo.com/1254cc9162b00244177aac9fffee748b)
+
+# ER図
+
+## [![Image from Gyazo](https://i.gyazo.com/cc7791756229ae59909d0143bc0ef0cb.png)](https://gyazo.com/cc7791756229ae59909d0143bc0ef0cb)
+
+# 画面遷移図
+
+## [![Image from Gyazo](https://i.gyazo.com/ffe1e8a0aa10aabfff5a906f4b5e46d7.png)](https://gyazo.com/ffe1e8a0aa10aabfff5a906f4b5e46d7)
 
 # テーブル設計
 
@@ -105,3 +128,12 @@
 
 - belongs_to :users
 - belongs_to :posts
+
+# clone
+
+### % git clone https://github.com/kazuma516/temiyage.git
+### % cd temiyage
+### % bundle install
+### % rails db:create
+### % rails db:migrate
+### % yarn install
