@@ -52,6 +52,7 @@
 
  https://docs.google.com/spreadsheets/d/1bAatjwYAi5cCN4_0SgR00LpPbUmM-12cRGmBKVxeP0I/edit#gid=982722306
 
+
 ## 実装機能
 
 ### トップページ
@@ -60,7 +61,7 @@
 
 ### 商品一覧表示機能
 
-[![Image from Gyazo](https://i.gyazo.com/4a546e36c33294375a140cb5ff32dce7.gif)](https://gyazo.com/4a546e36c33294375a140cb5ff32dce7)
+[![Image from Gyazo](https://i.gyazo.com/2c268f22b14d5be1356a4b6740c75b90.gif)](https://gyazo.com/2c268f22b14d5be1356a4b6740c75b90)
 
 ### ユーザー登録機能
 
