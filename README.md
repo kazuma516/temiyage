@@ -4,7 +4,9 @@
 ### temiyage
 
 ## アプリケーションの概要
- ユーザー登録すると手土産を投稿することができます。自身が投稿した商品は、編集と削除をすることができます。他のユーザーが投稿した商品は、お気に入りをすることができます。（お気に入り登録機能は今後実装したい）
+おすすめの手土産を投稿したり、他ユーザーのおすすめの手土産を参照することおができる情報収集アプリです。
+
+ユーザー登録すると手土産を投稿することができます。自身が投稿した商品は、編集と削除をすることができます。他のユーザーが投稿した商品は、検索をし、お気に入りをすることができます。（お気に入り登録機能、検索機能は今後実装予定です。）
 
 ## URL
 ### Renderによるデプロイ
@@ -57,11 +59,11 @@
 
 ### トップページ
 
-[![Image from Gyazo](https://i.gyazo.com/004b913264a4c61b01b9cab05555234c.gif)](https://gyazo.com/004b913264a4c61b01b9cab05555234c)
+[![Image from Gyazo](https://i.gyazo.com/4b81c6867b15bff182c13abcb8284703.gif)](https://gyazo.com/4b81c6867b15bff182c13abcb8284703)
 
 ### 商品一覧表示機能
 
-[![Image from Gyazo](https://i.gyazo.com/2c268f22b14d5be1356a4b6740c75b90.gif)](https://gyazo.com/2c268f22b14d5be1356a4b6740c75b90)
+[![Image from Gyazo](https://i.gyazo.com/cd3bbcf4fa0b543081db2c76e43606c5.gif)](https://gyazo.com/cd3bbcf4fa0b543081db2c76e43606c5)
 
 ### ユーザー登録機能
 
@@ -139,12 +141,13 @@
 
 ## clone
 
- % git clone https://github.com/kazuma516/temiyage.git
- % cd temiyage
- % bundle install
- % rails db:create
- % rails db:migrate
- % yarn install
+##### % git clone https://github.com/kazuma516/temiyage.git
+##### % cd temiyage
+##### % bundle install
+##### % rails db:create
+##### % rails db:migrate
+##### % yarn install
 
-[def]: https://gyazo.com/d17b6266ddcc9ad571cb1bb5ef1ec82c
-[def2]: https://gyazo.com/f8314bd3cedf48447def90026b959b10
+## 工夫したポイント①〜③
+
+一目で情報をインプットできるアプリケーションを作成することに努めた。具体的には以下の③点。①各都道府県の手土産が見れるようにレイアウトを考えたこと。トップページの関東地方のボタンをクリックすると１都6県が表示され、そこから各都道県の商品を見ることができる。（各都道府県のページは今後実装予定です。）②商品一覧ページは画像を中央に大きく表示させた。画像を見て商品の興味関心が高まれば良いと考えた。③商品新規投稿画面にプルダウンを多く用いた。出品者が簡単に投稿できるように工夫した。
