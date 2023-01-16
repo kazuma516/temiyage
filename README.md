@@ -1,7 +1,7 @@
 # README
 
 # アプリケーション名
-### temiyage
+ temiyage
 
 # アプリケーションの概要
 ### ユーザー登録すると手土産を投稿することができます。自身が投稿した商品は、編集と削除をすることができます。他のユーザーが投稿した商品は、お気に入りをすることができます。（お気に入り登録機能は今後実装したい）
@@ -55,8 +55,11 @@
 # 実装機能
 
 # トップページ
+
 ## [![Image from Gyazo](https://i.gyazo.com/f6f42dd94111143c4b2ab7417050b1dc.gif)](https://gyazo.com/f6f42dd94111143c4b2ab7417050b1dc)
+
 # ユーザー登録機能
+
 ## [![Image from Gyazo](https://i.gyazo.com/59fe8b43200a0177cab2ce4f940d0a2f.gif)](https://gyazo.com/59fe8b43200a0177cab2ce4f940d0a2f)
 
 # 商品投稿機能
