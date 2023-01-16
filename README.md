@@ -56,11 +56,11 @@
 
 ### トップページ
 
- [![Image from Gyazo](https://i.gyazo.com/f8314bd3cedf48447def90026b959b10.gif)][def2]
+[![Image from Gyazo](https://i.gyazo.com/f8314bd3cedf48447def90026b959b10.gif)](https://gyazo.com/f8314bd3cedf48447def90026b959b10)
 
 ### 商品一覧表示機能
 
-[![Image from Gyazo](https://i.gyazo.com/d17b6266ddcc9ad571cb1bb5ef1ec82c.gif)][def]
+[![Image from Gyazo](https://i.gyazo.com/d17b6266ddcc9ad571cb1bb5ef1ec82c.gif)](https://gyazo.com/d17b6266ddcc9ad571cb1bb5ef1ec82c)
 
 ### ユーザー登録機能
 
