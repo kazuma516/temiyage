@@ -56,11 +56,11 @@
 
 ### トップページ
 
- [![Image from Gyazo](https://i.gyazo.com/f8314bd3cedf48447def90026b959b10.gif)](https://gyazo.com/f8314bd3cedf48447def90026b959b10)
+ [![Image from Gyazo](https://i.gyazo.com/f8314bd3cedf48447def90026b959b10.gif)][def2]
 
 ### 商品一覧表示機能
 
-[![Image from Gyazo](https://i.gyazo.com/d17b6266ddcc9ad571cb1bb5ef1ec82c.gif)](https://gyazo.com/d17b6266ddcc9ad571cb1bb5ef1ec82c)
+[![Image from Gyazo](https://i.gyazo.com/d17b6266ddcc9ad571cb1bb5ef1ec82c.gif)][def]
 
 ### ユーザー登録機能
 
@@ -144,3 +144,6 @@
  % rails db:create
  % rails db:migrate
  % yarn install
+
+[def]: https://gyazo.com/d17b6266ddcc9ad571cb1bb5ef1ec82c
+[def2]: https://gyazo.com/f8314bd3cedf48447def90026b959b10
