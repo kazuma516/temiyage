@@ -56,7 +56,7 @@
 
 ### トップページ
 
-[![Image from Gyazo](https://i.gyazo.com/15025012f121505eb61137f1cbf9d244.gif)](https://gyazo.com/15025012f121505eb61137f1cbf9d244)
+[![Image from Gyazo](https://i.gyazo.com/5f8f3cb8fccaae69699a0a776fdd62a2.gif)](https://gyazo.com/5f8f3cb8fccaae69699a0a776fdd62a2)
 
 ### 商品一覧表示機能
 
