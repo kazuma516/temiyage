@@ -88,7 +88,7 @@
 
 ## 画面遷移図
 
- [![Image from Gyazo](https://i.gyazo.com/ffe1e8a0aa10aabfff5a906f4b5e46d7.png)](https://gyazo.com/ffe1e8a0aa10aabfff5a906f4b5e46d7)
+ [![Image from Gyazo](https://i.gyazo.com/7f99c4207b0117ca4e16c7b0075b21f3.png)](https://gyazo.com/7f99c4207b0117ca4e16c7b0075b21f3)
 
 ## テーブル設計
 
