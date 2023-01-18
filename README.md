@@ -84,7 +84,7 @@
 
 ## ER図
 
- [![Image from Gyazo](https://i.gyazo.com/cc7791756229ae59909d0143bc0ef0cb.png)](https://gyazo.com/cc7791756229ae59909d0143bc0ef0cb)
+ [![Image from Gyazo](https://i.gyazo.com/f8e2fac495f3eb91db5f48480f1f4791.png)](https://gyazo.com/f8e2fac495f3eb91db5f48480f1f4791)
 
 ## 画面遷移図
 
