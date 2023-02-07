@@ -3,6 +3,8 @@ ja:
     attributes:
       user:
         nickname: ニックネーム
+        lastname: 苗字
+        firstname: 名前
       item:
         text: テキスト
         image: 画像
