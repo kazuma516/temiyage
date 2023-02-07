@@ -27,7 +27,7 @@ ja:
         updated_at: 更新日
     models:
       user: ユーザー
-      lastname: 苗字
+      last＿name: 苗字
   devise:
     confirmations:
       confirmed: メールアドレスが確認できました。
