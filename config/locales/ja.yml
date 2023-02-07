@@ -2,7 +2,7 @@ ja:
   activerecord:
     attributes:
       user:
-        nick_name: ニックネーム
+        nickname: ニックネーム
       item:
         text: テキスト
         image: 画像
