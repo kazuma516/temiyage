@@ -11,3 +11,5 @@ ja:
       item:
         text: テキスト
         image: 画像
+        title: 商品名
+        introduction: 商品説明
