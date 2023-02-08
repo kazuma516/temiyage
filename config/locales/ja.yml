@@ -13,3 +13,6 @@ ja:
         image: 画像
         title: 商品名
         introduction: 商品説明
+        where_to_buy_id: 購入できる都道府県
+        category_id: カテゴリー
+        budgets_id: 予算
