@@ -22,7 +22,7 @@ class Item < ApplicationRecord
     validates :four_season_id
   end
 
-  with_options numericality: { other_than: 0, message: " は --- 意外を選択してください"} do
+  with_options numericality: { other_than: 0, message: " は ”---” 意外を選択してください"} do
     validates :where_to_buy_id
     validates :category_id
     validates :budgets_id
